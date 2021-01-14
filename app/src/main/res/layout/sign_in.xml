@@ -1,88 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#067BBC"
-    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="80dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/news_paper"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Platform Berita Terpercaya"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="90dp"
-        android:fontFamily="@font/mmedium"
-        android:textColor="#FFFFFF"
-        android:gravity="center"
-        />
-
-    <EditText
-        android:id="@+id/editText"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="46dp"
-        android:layout_marginTop="50dp"
-        android:textColor="#085F8F"
-        android:text="E-mail"
-        android:background="@drawable/rounded_button"
-        android:ems="10"
-        android:padding="10dp"
-        android:inputType="textEmailAddress" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/news_paper"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Platform Berita Terpercaya"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="90dp"
+                    android:fontFamily="@font/mmedium"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="50dp"
+                    android:textColor="#085F8F"
+                    android:hint="Email"
+                    android:background="@drawable/rounded_button"
+                    android:ems="10"
+                    android:padding="10dp"
+                    android:inputType="textEmailAddress" />
 
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="46dp"
-        android:layout_marginTop="40dp"
-        android:textColor="#085F8F"
-        android:text="Password"
-        android:background="@drawable/rounded_button"
-        android:ems="10"
-        android:padding="10dp"
-        android:inputType="textEmailAddress" />
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#085F8F"
+                    android:hint="Password"
+                    android:background="@drawable/rounded_button"
+                    android:ems="10"
+                    android:padding="10dp"
+                    android:inputType="textPassword" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:padding="10dp"
-        android:text="Forgot Password?"
-        android:fontFamily="@font/mmedium"
-        android:textColor="#ffffff"/>
-
-
-    <Button
-        android:id="@+id/btn_subscribe"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/rounded_button"
-        android:fontFamily="@font/mmedium"
-        android:text="Get Started"
-        android:textColor="#085F8F"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:padding="10dp"
-        android:text="You need account? SignUp"
-        android:textStyle="bold"
-        android:fontFamily="@font/mmedium"
-        android:textColor="#ffffff"
-        android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:text="Forgot Password?"
+                    android:fontFamily="@font/mmedium"
+                    android:textColor="#ffffff"/>
 
 
-</LinearLayout>
+                <Button
+                    android:id="@+id/btn_signIn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/rounded_button"
+                    android:fontFamily="@font/mmedium"
+                    android:text="Sign In"
+                    android:textColor="#085F8F"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/signUpDirect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:text="You need account? SignUp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/mmedium"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</ScrollView>
